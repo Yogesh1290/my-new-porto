@@ -78,10 +78,31 @@ const Contact = () => {
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    alert('Form submitted! (This is just a demo)');
-  };
+    e.preventDefault()
+
+    // Get form values
+    const nameInput = document.getElementById("name") as HTMLInputElement
+    const emailInput = document.getElementById("email") as HTMLInputElement
+    const subjectInput = document.getElementById("subject") as HTMLInputElement
+    const messageInput = document.getElementById("message") as HTMLTextAreaElement
+
+    const name = nameInput.value
+    const email = emailInput.value
+    const subject = subjectInput.value
+    const message = messageInput.value
+
+    // Create email body with user details
+    const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`
+
+    // Admin email address
+    const adminEmail = "sme50962@gmail.com"
+
+    // Create Gmail mailto link with pre-filled details
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${adminEmail}&su=${encodeURIComponent(subject)}&body=${emailBody}`
+
+    // Open Gmail in a new tab
+    window.open(mailtoLink, "_blank")
+  }
 
   return (
     <section 
