@@ -42,8 +42,8 @@ const Footer = () => {
             <div className="col-span-2 md:col-span-1">
               <h4 className="font-medium text-sm mb-4">Contact</h4>
               <ul className="space-y-2">
-                <li className="text-sm text-muted-foreground">sme50962@gmail.com</li>
-                <li className="text-sm text-muted-foreground">+977 9816766240</li>
+                <li className="text-sm text-muted-foreground">@gmail.com</li>
+                <li className="text-sm text-muted-foreground">+977 98</li>
               </ul>
             </div>
           </div>
