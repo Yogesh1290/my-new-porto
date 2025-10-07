@@ -95,7 +95,7 @@ const Contact = () => {
     const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`
 
     // Admin email address
-    const adminEmail = "sme50962@gmail.com"
+    const adminEmail = "@gmail.com"
 
     // Create Gmail mailto link with pre-filled details
     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${adminEmail}&su=${encodeURIComponent(subject)}&body=${emailBody}`
