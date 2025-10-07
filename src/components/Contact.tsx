@@ -194,11 +194,11 @@ const Contact = () => {
               <div className="space-y-4">
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Email</p>
-                  <p className="font-medium">sme50962@gmail.com</p>
+                  <p className="font-medium">@gmail.com</p>
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Phone</p>
-                  <p className="font-medium">+977 9816766240</p>
+                  <p className="font-medium">+977 98</p>
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Location</p>
